@@ -3,16 +3,62 @@ body {
 	background-color: #b7edc5;
 }
 
-.titulo {
+.log {
 	/*background-color: cyan;*/
 	font-family: 'Roboto', sans-serif;
 	position:absolute;
-	left: 600px;
-	top: 350px;
+	font-size: 32px;
+	left: 350px;
+	top: 100px;
 	margin-left:-110px;
 	margin-top:-40px;
 	
 }
+
+.duvidas {
+	/*background-color: cyan;*/
+	font-family: 'Roboto', sans-serif;
+	position:absolute;
+	font-size: 17px;
+	left: 650px;
+	top: 110px;
+	margin-left:-110px;
+	margin-top:-40px;
+	
+}
+.titulo {
+	/*background-color: cyan;*/
+	font-family: 'Roboto', sans-serif;
+	position:absolute;
+	font-size: 50px;
+	left: 710px;
+	top: 240px;
+	margin-left:-110px;
+	margin-top:-40px;
+	
+}
+.subtitulo {
+	/*background-color: cyan;*/
+	font-family: 'Roboto', sans-serif;
+	position:absolute;
+	left: 570px;
+	top: 330px;
+	font-size: 20px;
+	margin-left:-110px;
+	margin-top:-40px;
+	
+}
+.subtitulo2 {
+	/*background-color: cyan;*/
+	font-family: 'Roboto', sans-serif;
+	position:absolute;
+	left: 650px;
+	top: 380px;
+	margin-left:-110px;
+	margin-top:-40px;
+	
+}
+
 .card-maior {
 	background-color: #a3b8a9;
 	width: 100vw;
@@ -39,7 +85,7 @@ body {
 	background: #c9c9c9;
 	position: relative;
 	left: 260px;
-	top: 360px;
+	top: 290px;
 	border-radius: 10px;
 }	
 
@@ -49,7 +95,7 @@ body {
 	background: #c9c9c9;
 	position: relative;
 	left: 260px;
-	top: 370px;
+	top: 300px;
 	border-radius: 10px;
 }
 .opcao3 {
@@ -58,8 +104,12 @@ body {
 	background: #c9c9c9;
 	position: relative;
 	left: 260px;
-	top: 380px;
+	top: 310px;
 	border-radius: 10px;
+}
+.login{
+	margin-top: 50px; 
+	margin-left: 900px;
 }
 
 /*{
