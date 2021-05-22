@@ -12,7 +12,6 @@ body {
     margin-left: 200px;
   }
   
-  /*main side bar*/
   .msb {
     width: 200px;
     background-color: #F5F7F9;
@@ -26,7 +25,7 @@ body {
     height: 100%;
     z-index: 1;
     border-right: 1px solid #ddd;
-    
+  
       border: none;
       margin-left: 0;
       background-color: inherit;
@@ -44,13 +43,14 @@ body {
         margin: 0;
         background: inherit;
     }
-      li {
-        display: block;
-        width: 100%;
+
+     li {
+    display: block;
+    width: 100%;
       
-          padding: 15px;
-          color: #5f5f5f;
-        margin-right: 8px;
+    padding: 15px;
+    color: #5f5f5f;
+    margin-right: 8px;
           
     
       padding-top: 5px;
@@ -73,49 +73,11 @@ body {
         clear: both;
         content: "";      
         display: table;
-      
-      
-        color: #444;
-        padding: 10px 25px;
-        display: block;
-        vertical-align: middle;
-        
-    
-          font-size: 16px;
-          margin-right: 5px;
-          font-weight: 300;
-          display: inline-block;
-    /*ns: nav-sub*/
-    
-   
+
+  
+       }
        
-          padding: 10px 50px;
-       
-  
-  
-  /*main content wrapper*/
- 
-    margin-left: 200px;
-    position: relative;
-    min-height: 100%;
-    
-    /*content view*/
-    
-   
-  
-  /*globals*/
- 
-   
- 
-  
-  
-  
-    container-fluid 
-      padding-left: 0;
-      padding-right 
-    
-    
-    ul, li {
+       ul, li {
       margin: 0;
       padding: 0;
     
@@ -161,7 +123,7 @@ body {
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
     
-  
+    
     /* Slide in animation */
     @-moz-keyframes slidein {
       0% {
@@ -260,4 +222,4 @@ body {
         margin-left: 0;
       }
     }
-    }
+  }
