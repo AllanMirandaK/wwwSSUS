@@ -20,16 +20,15 @@
 	          <li class="active">
 	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cadastros</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
+              <li>
                     <a href="cad_paciente.php">Cadastrar paciente</a>
                 </li>
                 <li>
-                    <a href="#">Cadastrar Especialidade</a>
+                    <a href="cad_medico.php">Cadastrar Especialidade</a>
                 </li>
                 <li>
-                    <a href="#">Cadastrar Consulta</a>
+                    <a href="cad_consulta.php">Cadastrar Consulta</a>
                 </li>
-
 	            </ul>
 	          </li>
 	        
@@ -88,12 +87,6 @@
                 <label for="inputCEP">CEP</label>
                 <input type="text" class="form-control" id="cep" placeholder="00.000.000-00">
                 </div>
-            
-            
-            <div class="form-group col-md-6">
-                <label for="inputAddress2">Data consulta</label>
-                <input type="date" class="form-control" id="data_cons">
-            </div>
             </div>
 
             <button type="submit" class="btn btn-primary">Entrar</button>

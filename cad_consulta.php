@@ -24,10 +24,10 @@
                     <a href="cad_paciente.php">Cadastrar paciente</a>
                 </li>
                 <li>
-                    <a href="#">Cadastrar Especialidade</a>
+                    <a href="cad_medico">Cadastrar Especialidade</a>
                 </li>
                 <li>
-                    <a href="#">Cadastrar Consulta</a>
+                    <a href="cad_consulta">Cadastrar Consulta</a>
                 </li>
 
 	            </ul>
@@ -57,21 +57,6 @@
                 <label for="inputEmail4">Nome do paciente</label>
                 <input type="text" class="form-control" id="nome" placeholder="Nome do paciente">
                 </div>
-                <div class="form-group col-md-6">
-                <label for="inputPassword4">Sitomas</label>
-                <input type="text" class="form-control" id="cpf" placeholder="Sintomas relatados">
-                </div>
-            </div>
-            <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputAddress">Cartão do sus</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Nº cartão do sus">
-            </div>
-            <div class="form-group col-md-3">
-                <label for="inputAddress2">Data da Nascimento</label>
-                <input type="date" class="form-control" id="pac_consulta">
-            
-            </div>
             <div class="form-group col-md-3">
                 <label for="inputEstado">Encaminhamento</label>
                 <select id="inputEstado" class="form-control">
@@ -83,7 +68,7 @@
                 <label for="inputAddress2">Data da consulta</label>
                 <input type="date" class="form-control" id="pac_consulta">
             </div>
-            </div>
+        </div>
 
             <button type="submit" class="btn btn-primary">Entrar</button>
             </form>

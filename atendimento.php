@@ -24,10 +24,10 @@
                     <a href="cad_paciente.php">Cadastrar paciente</a>
                 </li>
                 <li>
-                    <a href="#">Cadastrar Especialidade</a>
+                    <a href="cad_medico">Cadastrar Especialidade</a>
                 </li>
                 <li>
-                    <a href="#">Cadastrar Consulta</a>
+                    <a href="cad_consulta">Cadastrar Consulta</a>
                 </li>
 
 	            </ul>

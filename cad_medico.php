@@ -20,14 +20,14 @@
 	          <li class="active">
 	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cadastros</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
+              <li>
                     <a href="cad_paciente.php">Cadastrar paciente</a>
                 </li>
                 <li>
-                    <a href="#">Cadastrar Especialidade</a>
+                    <a href="cad_medico.php">Cadastrar Especialidade</a>
                 </li>
                 <li>
-                    <a href="#">Cadastrar Consulta</a>
+                    <a href="cad_consulta.php">Cadastrar Consulta</a>
                 </li>
 
 	            </ul>
