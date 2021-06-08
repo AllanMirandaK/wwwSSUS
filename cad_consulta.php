@@ -49,37 +49,30 @@
       <div id="content" class="p-4 p-md-5">
 
 
-        <h2 class="mb-4">Processos em andamento</h2>
+        <h2 class="mb-4">Cadastrar Consulta</h2>
           
-
-        <div class="container">
-          <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-              </tr>
-              <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-              </tr>
-              <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-              </tr>
-            </tbody>
-          </table>
+        <form><!--form cadastro de paciente-->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputEmail4">Nome do paciente</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome do paciente">
+                </div>
+            <div class="form-group col-md-3">
+                <label for="inputEstado">Encaminhamento</label>
+                <select id="inputEstado" class="form-control">
+                    <option selected>Escolher...</option>
+                    <option>...</option>
+                </select>
+                </div>
+            <div class="form-group col-md-3">
+                <label for="inputAddress2">Data da consulta</label>
+                <input type="date" class="form-control" id="pac_consulta">
+            </div>
         </div>
+
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+
 
       </div>
 		</div>
