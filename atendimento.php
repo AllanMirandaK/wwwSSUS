@@ -33,11 +33,9 @@
 	            </ul>
 	          </li>
 	        
-	         
             <li>
-                    <a href="#">Atendimento para encaminhamento</a>
-                </li>
-	         
+                <a href="#">Atendimento para encaminhamento</a>
+              </li>
 	        </ul>
 
 	        <div class="footer">
