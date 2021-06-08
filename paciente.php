@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<title>Bem-vindo</title>
+		<link rel="stylesheet" type="text/css" href="css/paciente.css">
+		<title>Consultar Protocolo</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -18,21 +19,17 @@
 
 			<p class="titulo">SSUS</p>
 
-			<p class="subtitulo">Plataforma para consulta de processos médicos:</p>
+			<p class="subtitulo">Insira seu protocolo para saber mais sobre o mesmo:</p>
 
-				<p class="subtitulo2">Escolha a opção que você se encaixa:</p>
-
-				<a href="paciente.php"><div class="opcao1">
-					PACIENTE (CONSULTA PROTOCOLO)
-				</div></a>
-				<div class="opcao2">
-	
-				</div>
-
-				<div class="opcao3">
-					
-				</div>
+			<div id="divBusca">
+				  <img src="../images/search.png" style="width:30px;" alt="Buscar..."/>
+				  <input type="text" id="txtBusca" placeholder="Buscar..."/>
+				  <button id="btnBusca">Buscar</button>
 			</div>
+
+
+			</div>
+
 			
 		</div>
 
