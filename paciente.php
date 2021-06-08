@@ -44,6 +44,19 @@
 			      <td>Roberto Brasileiro Triste</td>
 			      <td>Aguardando agendamento</td>
 			    </tr>
+			    <?php
+					/* $sql = "select id, title, watched from serie where netflix = 1 order by title; "; */
+					if (isset($_REQUEST['pesquisa'])) {
+						$sql = "select protocolo, paciente, status from consulta where protocolo like '%".$_REQUEST['pesquisa']."%' order by protocolo; ";
+					}
+					$rs = $conn->query($sql);
+					while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) {
+				?>
+				<tr>
+					<td><?=$row['protocolo']?></td>
+					<td><?=$row['paciente']?></td>
+					<td><?=$row['status']?></td>
+				</tr>
 			  </tbody>
 			</table>
 		</div>
