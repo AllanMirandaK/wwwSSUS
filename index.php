@@ -25,13 +25,13 @@
 				<a href="paciente.php"><div class="opcao1">
 					PACIENTE (CONSULTA PROTOCOLO)
 				</div></a>
-				<div class="opcao2">
-	
-				</div>
+				<a href="atendimento.php"><div class="opcao2">
+					LOGIN UNIDADE
+				</div></a>
 
-				<div class="opcao3">
-					
-				</div>
+				<a href="loginmedico.php"><div class="opcao3">
+					LOGIN MÉDICO
+				</div></a>
 			</div>
 			
 		</div>
