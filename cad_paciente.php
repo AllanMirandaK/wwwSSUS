@@ -50,43 +50,43 @@
 
         <h2 class="mb-4">Cadastrar Paciente</h2>
           
-        <form onsubmit="validarCPF('cpf')"><!--form cadastro de paciente-->
+        <form onsubmit="validarCPF('cpf')" method="post" action="paciente_insert.php"><!--form cadastro de paciente-->
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputEmail4">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Nome do paciente">
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do paciente">
                 </div>
                 <div class="form-group col-md-6">
                 <label for="inputPassword4">CPF</label>
-                <input type="text" class="form-control" id="cpf" placeholder="CPF do paciente (sem pontos)" maxlength="11">
+                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF do paciente (sem pontos)" maxlength="11">
                 </div>
             </div>
             <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputAddress">Endereço</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Rua Leopoldo, nº 0">
+                <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua tal, n 000">
             </div>
             <div class="form-group col-md-6">
                 <label for="inputAddress2">Complemento</label>
-                <input type="text" class="form-control" id="complemento" placeholder="Apartamento, hotel, casa, etc.">
+                <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Apartamento, hotel, casa, etc.">
             </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputCity">Nº cartão do sus</label>
-                <input type="text" class="form-control" id="cartao" placeholder="Cartão do sus do paciente">
+                <input type="text" class="form-control" id="cartaosus" name="cartaosus" placeholder="Cartão do sus do paciente">
                 </div>
                 <div class="form-group col-md-3">
-                <label for="inputEstado">Gênero</label>
-                <select id="inputEstado" class="form-control">
+                <label for="genero">Gênero</label>
+                <select id="genero" name="genero" class="form-control">
                     <option selected>Escolher...</option>
-                    <option>Feminino</option>
-                    <option>Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
                 </select>
                 </div>
                 <div class="form-group col-md-3">
-                <label for="inputCEP">CEP</label>
-                <input type="text" class="form-control" id="cep" placeholder="00.000-000">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" name="cep" placeholder="00.000-000">
                 </div>
             </div>
 
