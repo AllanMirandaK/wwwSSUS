@@ -13,16 +13,16 @@
     <div class="content">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action=""> 
+        <form method="post" action="loginmedicorota.php"> 
           <h1>Login</h1> 
           <p> 
-            <label for="nome_login">Seu nome</label>
-            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+            <label for="email_login">Seu e-mail</label>
+            <input id="email_login" name="email_login" required="required" type="text" placeholder="ex. contato@ssus.com"/>
           </p>
            
           <p> 
-            <label for="email_login">Seu e-mail</label>
-            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+            <label for="senha_login">Sua senha</label>
+            <input id="senha_login" name="senha_login" required="required" type="password" placeholder="ex. senha" /> 
           </p>
            
           <p> 
@@ -32,11 +32,6 @@
            
           <p> 
             <input type="submit" value="Logar" /> 
-          </p>
-           
-          <p class="link">
-            Ainda não tem conta?
-            <a href="#paracadastro">Cadastre-se</a>
           </p>
         </form>
       </div>

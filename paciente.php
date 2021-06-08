@@ -27,34 +27,22 @@
 				  <button id="btnBusca">Buscar</button>
 			</div>
 
-			<div class="tabelaPesquisa">
+			<div id="tabelaPesquisa">
 			<table class="table">
 			  <thead>
 			    <tr>
-			      <th scope="col">#</th>
-			      <th scope="col">Primeiro</th>
-			      <th scope="col">Último</th>
-			      <th scope="col">Nickname</th>
+			      <!--<th scope="col">#</th>-->
+			      <th scope="col">Protocolo</th>
+			      <th scope="col">Paciente</th>
+			      <th scope="col">Status</th>
 			    </tr>
 			  </thead>
 			  <tbody>
 			    <tr>
-			      <th scope="row">1</th>
-			      <td>Mark</td>
-			      <td>Otto</td>
-			      <td>@mdo</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">2</th>
-			      <td>Jacob</td>
-			      <td>Thornton</td>
-			      <td>@fat</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>Larry</td>
-			      <td>the Bird</td>
-			      <td>@twitter</td>
+			      <!--<th scope="row">00001</th>-->
+			      <td>00001</td>
+			      <td>Roberto Brasileiro Triste</td>
+			      <td>Aguardando agendamento</td>
 			    </tr>
 			  </tbody>
 			</table>

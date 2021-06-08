@@ -1,3 +1,12 @@
+#tabelaPesquisa{
+  position:  absolute;
+  left: 380px;
+  top: 390px;
+  font-size: 20px;
+  align-items: center;
+}
+
+
 #divBusca{
   background-color:#E0EEEE;
   border:solid 2px #5F9EA0;
@@ -8,13 +17,6 @@
   font-size: 20px;
 }
 
-
-#tabelaPesquisa{
-  position:absolute;
-  left: 570px;
-  top: 430px;
-  font-size: 20px;
-}
 
 #txtBusca{
   float:left;
