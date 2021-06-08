@@ -49,37 +49,44 @@
       <div id="content" class="p-4 p-md-5">
 
 
-        <h2 class="mb-4">Processos em andamento</h2>
+        <h2 class="mb-4">Cadastrar Médico</h2>
           
+        <form><!--form cadastro de paciente-->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputEmail4">Nome do médico</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="inputPassword4">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="CPF do médico">
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Especialidade</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Clínico geral, Pediatra">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress2">CRM</label>
+                <input type="text" class="form-control" id="complemento" placeholder="Nº crm ">
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputCity">Nacionalidade</label>
+                <input type="text" class="form-control" id="cartao" placeholder="Cartão do sus do paciente">
+            </div>
+              
+            <div class="form-group col-md-6">
+                <label for="inputAddress2">Data nascimento</label>
+                <input type="date" class="form-control" id="data_cons">
+            </div>
+            </div>
 
-        <div class="container">
-          <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-              </tr>
-              <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-              </tr>
-              <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+
 
       </div>
 		</div>
