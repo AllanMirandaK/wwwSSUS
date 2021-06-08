@@ -50,7 +50,7 @@
 
         <h2 class="mb-4">Cadastrar Paciente</h2>
           
-        <form><!--form cadastro de paciente-->
+        <form onsubmit="validarCPF('cpf')"><!--form cadastro de paciente-->
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputEmail4">Nome</label>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="form-group col-md-6">
                 <label for="inputPassword4">CPF</label>
-                <input type="text" class="form-control" id="cpf" placeholder="CPF do paciente">
+                <input type="text" class="form-control" id="cpf" placeholder="CPF do paciente (sem pontos)" maxlength="11">
                 </div>
             </div>
             <div class="form-row">
@@ -101,5 +101,6 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/validaCPF.js"></script>
   </body>
 </html>
