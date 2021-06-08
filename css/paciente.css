@@ -2,12 +2,17 @@
   background-color:#E0EEEE;
   border:solid 2px #5F9EA0;
   border-radius:10px;
-
-
-
   position:absolute;
   left: 570px;
   top: 330px;
+  font-size: 20px;
+}
+
+
+#tabelaPesquisa{
+  position:absolute;
+  left: 570px;
+  top: 430px;
   font-size: 20px;
 }
 
