@@ -77,19 +77,20 @@
                 <input type="text" class="form-control" id="cartao" placeholder="Cartão do sus do paciente">
                 </div>
                 <div class="form-group col-md-3">
-                <label for="inputEstado">Médico</label>
+                <label for="inputEstado">Gênero</label>
                 <select id="inputEstado" class="form-control">
                     <option selected>Escolher...</option>
-                    <option>...</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
                 </select>
                 </div>
                 <div class="form-group col-md-3">
                 <label for="inputCEP">CEP</label>
-                <input type="text" class="form-control" id="cep" placeholder="00.000.000-00">
+                <input type="text" class="form-control" id="cep" placeholder="00.000-000">
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-primary">CADASTRAR</button>
             </form>
 
 
