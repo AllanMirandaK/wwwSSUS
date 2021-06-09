@@ -34,9 +34,6 @@
             </li>
 
             <li>
-                  <a href="#">Agenda</a>
-            </li>
-            <li>
                   <a href="logout.php">Sair</a>
             </li>
 	        </ul>
