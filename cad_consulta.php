@@ -23,26 +23,26 @@
 
         <h2 class="mb-4">Cadastrar Consulta Clínico Geral</h2>
           
-        <form><!--form cadastro de paciente-->
+        <form method="post" action="consulta_insert.php"m><!--form cadastro de paciente-->
             <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">CPF</label>
-                  <input type="text" class="form-control" id="cpf" placeholder="CPF paciente">
+                  <input type="text" class="form-control" id="cpf_pac" name="cpf_pac" placeholder="CPF paciente (sem pontos)" maxlength="11">
                 </div>
 
                 <div class="form-group col-md-3">
                     <label for="inputAddress2">Data da consulta</label>
-                    <input type="date" class="form-control" id="pac_consulta">
+                    <input type="date" class="form-control" id="pac_consulta" name="pac_consulta">
                 </div>
               </div>
               <div class="mb-3">
                 <label for="descricao">Descrição</label>
-                <textarea class="form-control " id="descricao" placeholder="Descreva uma breve descrição dos sintomas do paciente" required></textarea>
+                <textarea class="form-control " id="descricao" name="descricao" placeholder="Descreva uma breve descrição dos sintomas do paciente" required></textarea>
                 <div class="invalid-feedback">
                 </div>
               </div>
 
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-primary">Registrar</button>
             </form>
 
 
