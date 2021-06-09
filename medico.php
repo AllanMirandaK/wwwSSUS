@@ -1,6 +1,8 @@
 <?php
   session_start();
   //require 'security_medico.php';
+
+  $conn = new pdo('sqlite:bancodedados.data');
   ?>
 
 <!doctype html>
@@ -60,38 +62,25 @@
                 <th>Nome</th>
                 <th>Descricao</th>
                 <th>CPF</th>
-                <th>Situação</th>
+                <th>Atender</th>
               </tr>
             </thead>
             <tbody>
+              <?php
+                  $sql = "select id, cpf_pac, data_cons, descricao, status, fechamento, clinico, encaminhamento, especialista, data_esp from consulta where status = 'aguardando atendimento'; ";
+                  $rs = $conn->query($sql);
+                  while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) {
+              ?>
               <tr>
-                <td>Maria</td>
-                <td>Febre e dor de cabeçca</td>
-                <td>587.258.678-50</td>
-                <td><a href="#">Atender</a></td>
-               
+                <td><?=$row['id']?></td>
+                <td><?=$row['descricao']?></td>
+                <td><?=$row['cpf_pac']?></td>
+                <td><a href="aindex.php?action=update&id=<?=$row['id']?>"> X </a></td>
               </tr>
-          
-              <tr>
-                <td>Roger</td>
-                <td>Dor na perna</td>
-                <td>344.857.587-60</td>
-                <td><a href="#">Atender</a></td>
-              </tr>
-
-              <tr>
-                <td>Bruna</td>
-                <td>Corte na testa</td>
-                <td>789.654.321.89</td>
-                <td><a href="#">Atender</a></td>
-              </tr>
-
-              <tr>
-                <td>Vagner</td>
-                <td>Diarréia</td>
-                <td>741.852.258-78</td>
-                <td><a href="#">Atender</a></td>
-              </tr>
+<?php
+      }
+?>
+              
 
             </tbody>
           </table>
