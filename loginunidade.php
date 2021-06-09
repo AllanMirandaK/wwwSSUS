@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
-  <title>Formulário de Login Médico</title>
+  <title>Formulário de Login Unidade</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" type="text/css" href="../css/loginmedico.css" />
 </head>
@@ -13,11 +13,11 @@
     <div class="content">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action="loginmedicorota.php"> 
+        <form method="post" action="loginunidaderota.php"> 
           <h1>Login</h1> 
           <p> 
-            <label for="email_login">Seu e-mail</label>
-            <input id="email_login" name="email_login" required="required" type="text" placeholder="ex. contato@ssus.com"/>
+            <label for="usuario_login">Seu usuario</label>
+            <input id="usuario_login" name="usuario_login" required="required" type="text" placeholder="ex. unpedrabranca"/>
           </p>
            
           <p> 
