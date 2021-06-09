@@ -75,7 +75,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputCity">Nacionalidade</label>
-                <input type="text" class="form-control" id="cartao" placeholder="Cartão do sus do paciente">
+                <input type="text" class="form-control" id="cartao" placeholder="Nacionalidade paciente">
             </div>
               
             <div class="form-group col-md-6">
