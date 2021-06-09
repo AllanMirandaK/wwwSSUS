@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group col-md-6">
                 <label for="inputPassword4">CPF</label>
-                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF do médico">
+                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF do médico" maxlength="11">
                 </div>
             </div>
             <div class="form-row">
