@@ -17,12 +17,17 @@
 				<div class="p-4 pt-5">
 		  		<a href="#" class="img logo mb-5" style="background-image: url(images/logo.png);"></a>
 	        <ul class="list-unstyled components mb-5">
-	          
+	        	        
             <li>
-              <a href="#">Listar Paciente</a>
+                <a href="medico.php">Atendimentos do dia</a>
             </li>
-           
-	         
+
+            <li>
+                  <a href="#">Agenda</a>
+            </li>
+            <li>
+                  <a href="index.php">Sair</a>
+            </li>
 	        </ul>
 
 	        <div class="footer">
@@ -36,34 +41,49 @@
       <div id="content" class="p-4 p-md-5">
 
 
-        <h2 class="mb-4">Processos em andamento</h2>
+        <h2 class="mb-4">Atendimentos do dia</h2>
           
 
         <div class="container">
           <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
+                <th>Nome</th>
+                <th>Descricao</th>
+                <th>CPF</th>
+                <th>Situação</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
+                <td>Maria</td>
+                <td>Febre e dor de cabeçca</td>
+                <td>587.258.678-50</td>
+                <td><a href="#">Atender</a></td>
+               
               </tr>
+          
               <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
+                <td>Roger</td>
+                <td>Dor na perna</td>
+                <td>344.857.587-60</td>
+                <td><a href="#">Atender</a></td>
               </tr>
+
               <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
+                <td>Bruna</td>
+                <td>Corte na testa</td>
+                <td>789.654.321.89</td>
+                <td><a href="#">Atender</a></td>
               </tr>
+
+              <tr>
+                <td>Vagner</td>
+                <td>Diarréia</td>
+                <td>741.852.258-78</td>
+                <td><a href="#">Atender</a></td>
+              </tr>
+
             </tbody>
           </table>
         </div>
@@ -76,4 +96,4 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
-</html>
+</html> 

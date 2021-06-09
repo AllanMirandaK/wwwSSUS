@@ -27,14 +27,14 @@
                     <a href="cad_medico">Cadastrar Especialidade</a>
                 </li>
                 <li>
-                    <a href="cad_consulta">Cadastrar Consulta</a>
+                    <a href="cad_consulta">Cadastrar Consulta Clínico Geral</a>
                 </li>
 
 	            </ul>
 	          </li>
 	        
             <li>
-                <a href="#">Atendimento para encaminhamento</a>
+                <a href="atendimento.php">Atendimento para encaminhamento</a>
               </li>
 	        </ul>
 
@@ -49,26 +49,26 @@
       <div id="content" class="p-4 p-md-5">
 
 
-        <h2 class="mb-4">Cadastrar Consulta</h2>
+        <h2 class="mb-4">Cadastrar Consulta Clínico Geral</h2>
           
         <form><!--form cadastro de paciente-->
             <div class="form-row">
                 <div class="form-group col-md-6">
-                <label for="inputEmail4">Nome do paciente</label>
-                <input type="text" class="form-control" id="nome" placeholder="Nome do paciente">
+                  <label for="inputEmail4">CPF</label>
+                  <input type="text" class="form-control" id="cpf" placeholder="CPF paciente">
                 </div>
-            <div class="form-group col-md-3">
-                <label for="inputEstado">Encaminhamento</label>
-                <select id="inputEstado" class="form-control">
-                    <option selected>Escolher...</option>
-                    <option>...</option>
-                </select>
+
+                <div class="form-group col-md-3">
+                    <label for="inputAddress2">Data da consulta</label>
+                    <input type="date" class="form-control" id="pac_consulta">
                 </div>
-            <div class="form-group col-md-3">
-                <label for="inputAddress2">Data da consulta</label>
-                <input type="date" class="form-control" id="pac_consulta">
-            </div>
-        </div>
+              </div>
+              <div class="mb-3">
+                <label for="descricao">Descrição</label>
+                <textarea class="form-control " id="descricao" placeholder="Descreva uma breve descrição dos sintomas do paciente" required></textarea>
+                <div class="invalid-feedback">
+                </div>
+              </div>
 
             <button type="submit" class="btn btn-primary">Entrar</button>
             </form>

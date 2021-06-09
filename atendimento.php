@@ -56,26 +56,23 @@
           <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
+                <th>Nome</th>
+                <th>Descricao</th>
+                <th>CPF</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
+                <td>Maria</td>
+                <td>Febre e dor de cabeçca</td>
+                <td>587.258.678-50</td>
+               
               </tr>
+          
               <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-              </tr>
-              <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
+                <td>Roger</td>
+                <td>Dor na perna</td>
+                <td>344.857.587-60</td>
               </tr>
             </tbody>
           </table>
