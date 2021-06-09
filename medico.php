@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  //require 'security_medico.php';
+  ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,7 +22,11 @@
 				<div class="p-4 pt-5">
 		  		<a href="#" class="img logo mb-5" style="background-image: url(images/logo.png);"></a>
 	        <ul class="list-unstyled components mb-5">
-	        	        
+	          <li>
+                Bem-vindo <?php if (isset($_SESSION['email_login'])) {
+      print $_SESSION['email_login'];
+    }  ?> 
+            </li>        
             <li>
                 <a href="medico.php">Atendimentos do dia</a>
             </li>
@@ -26,7 +35,7 @@
                   <a href="#">Agenda</a>
             </li>
             <li>
-                  <a href="index.php">Sair</a>
+                  <a href="logout.php">Sair</a>
             </li>
 	        </ul>
 

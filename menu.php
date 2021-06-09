@@ -14,6 +14,9 @@
                 <li>
                     <a href="cad_consulta.php">Cadastrar Consulta</a>
                 </li>
+                <li>
+                    <a href="logout.php">Sair</a>
+                </li>
 
 	            </ul>
 	          </li>
