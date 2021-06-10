@@ -8,10 +8,12 @@
 		  		<a href="#" class="img logo mb-5" style="background-image: url(images/logo.png);"></a>
 	        <ul class="list-unstyled components mb-5">
 	          <li >
-                Bem-vindo <?php if (isset($_SESSION['usuario_login'])) {
-      print $_SESSION['usuario_login'];
-    }  ?> 
+                Bem-vindo: <?php if (isset($_SESSION['usuario_login'])) {
+                          print $_SESSION['usuario_login'];
+                        }  ?> 
             </li>
+
+            </p>
 	          <li >
 	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cadastros</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">

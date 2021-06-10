@@ -54,27 +54,23 @@
       <div id="content" class="p-4 p-md-5">
 
 
-        <h2 class="mb-4">Processos em andamento</h2>
+        <h2 class="mb-4">Liberar agenda</h2>
+        <form method="post" action="consulta_insert.php"m><!--form cadastro de paciente-->
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="inputAddress2">Dia livre para consulta</label>
+                    <input type="date" class="form-control" id="pac_consulta" name="pac_consulta">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="inputAddress2">Hora vaga</label>
+                    <input type="time" class="form-control" id="pac_consulta" name="pac_consulta">
+                </div>
+              </div>
+
+            <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
           
 
-            <div class="container">
-          <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th>Nome</th>
-                <th>Descricao</th>
-                <th>CPF</th>
-                <th>Atender</th>
-              </tr>
-
-
-              
-
-            </tbody>
-          </table>
-        </div>
-
-      </div>
 		</div>
 
     <script src="js/jquery.min.js"></script>
@@ -83,5 +79,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-
-

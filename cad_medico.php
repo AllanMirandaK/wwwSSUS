@@ -46,7 +46,7 @@
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-3">
                 <label for="booleanesp">Tipo:</label>
                 <select id="booleanesp" name="booleanesp" class="form-control">
                     <option selected>Escolher...</option>

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link rel="stylesheet" type="text/css" href="css/paciente.css">
+		<link rel="stylesheet" type="text/css" href="css/paciente_proto.css">
 		<title>Consultar Protocolo</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -26,24 +26,25 @@
 				  <input type="text" id="txtBusca" placeholder="Buscar..."/>
 				  <button id="btnBusca">Buscar</button>
 			</div>
+		
 
 			<div id="tabelaPesquisa">
 			<table class="table">
-			  <thead>
+            <thead>
+			<tr>
+					<th scope="col">Protocolo</th>
+					<th scope="col">Nome</th>
+					<th scope="col">Situação</th>
+			</tr>
+		</thead>
+
+            <tbody>
 			    <tr>
-			      <!--<th scope="col">#</th>-->
-			      <th scope="col">Protocolo</th>
-			      <th scope="col">Paciente</th>
-			      <th scope="col">Status</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <th scope="row">00001</th>-->
-			      <td>00001</td>
-			      <td>Roberto Brasileiro Triste</td>
+			      <th scope="row">00001</th>
+			      <td>Renato Peixoto Amaral</td>
 			      <td>Aguardando agendamento</td>
 			    </tr>
+				
 			    <!--<?php
 					/* $sql = "select id, title, watched from serie where netflix = 1 order by title; "; */
 	//				if (isset($_REQUEST['pesquisa'])) {

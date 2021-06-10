@@ -35,7 +35,10 @@
 	        
             <li>
                 <a href="encaminhamento.php">Atendimento para encaminhamento</a>
-              </li>
+            </li>
+            <li>
+                    <a href="index.php">Sair</a>
+            </li>
 	        </ul>
 
 	        <div class="footer">
@@ -46,13 +49,12 @@
     	</nav>
 
         <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5">
-
-
-        <h2 class="mb-4">Consultas em andamento</h2>
-          
+      <div id="content" class="p-4 p-md-5">          
 
         <div class="container">
+
+        <h2 class="mb-4">Consultas em andamento</h2>
+
           <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -105,6 +107,46 @@
                 <td>Aguardando</td>
                 <td>8798654654125</td>
 
+              </tr>
+
+            </tbody>
+          </table>
+
+
+          <h2 class="mb-4">Datas Disponíveis</h2>
+          
+
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>Médico</th>
+                <th>Especialidade</th>
+                <th>Unidade</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Ação</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Maria</td>
+                <td>Pediatra</td>
+                <td>Hospital Mais Viver</td>
+                <td>25/06/2021</td>
+                <td>15:30:00</td> 
+                <td><button type="button" class="btn btn-success">+</button></td> 
+
+              </tr>
+              <tr>
+                <td>Ricardo</td>
+                <td>Cardiologista</td>
+                <td>Unidade </td>
+                <td>26/06/2021</td>
+                <td>16:10:00</td>
+                <td><button type="button" class="btn btn-success">+</button></td>  
+              </tr>
+          
               </tr>
 
             </tbody>

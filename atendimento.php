@@ -36,7 +36,7 @@
             <tbody>
               <tr>
                 <td>Maria</td>
-                <td>Febre e dor de cabeçca</td>
+                <td>Febre e dor de cabeça</td>
                 <td>587.258.678-50</td>
                
               </tr>
