@@ -1,3 +1,10 @@
+<?php
+  //session_start();
+  //require 'security_medico.php';
+
+  $conn = new pdo('sqlite:bancodedados.data');
+  ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,107 +20,47 @@
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
-<<<<<<< HEAD
-			<nav id="sidebar">
-				<div class="p-4 pt-5">
-		  		<a href="#" class="img logo mb-5" style="background-image: url(images/logo.png);"></a>
-	        <ul class="list-unstyled components mb-5">
-	          <li class="active">
-	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cadastros</a>
-	            <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                    <a href="cad_paciente.php">Cadastrar paciente</a>
-                </li>
-                <li>
-                    <a href="cad_medico.php">Cadastrar Especialidade</a>
-                </li>
-                <li>
-                    <a href="cad_consulta.php">Cadastrar Consulta</a>
-                </li>
-
-	            </ul>
-	          </li>
-	        
-            <li>
-                <a href="encaminhamento.php">Atendimento para encaminhamento</a>
-            </li>
-            <li>
-                    <a href="index.php">Sair</a>
-            </li>
-	        </ul>
-
-	        <div class="footer">
-	        
-	        </div>
-
-	      </div>
-    	</nav>
-=======
+			
 			<?php
                 require 'menu.php';
             ?>
->>>>>>> 616676d20a13593cc5737c10e70e4a694f5e2007
+
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5">          
 
         <div class="container">
 
-        <h2 class="mb-4">Consultas em andamento</h2>
-
+        <h2 class="mb-4">Consultas aguardando agendamento</h2>
           <table class="table">
             <thead class="thead-dark">
               <tr>
+                <th>Nº Protocolo</th>
                 <th>Nome</th>
                 <th>Exame</th>
                 <th>Situação</th>
                 <th>Profissional</th>
                 <th>Data Consulta</th>
-                <th>Local</th>
-                <th>Nº Protocolo</th>
               </tr>
             </thead>
             <tbody>
+              <?php
+                  $sql = "select id, nome_pac, encaminhamento, status, clinico, data_cons from consulta where status = 'aguardando agendamento'; ";
+                  $rs = $conn->query($sql);
+                  while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) {
+              ?>
               <tr>
-                <td>Maria</td>
-                <td>Tomografia</td>
-                <td>Marcado</td>
-                <td>Pedro</td> 
-                <td>25/08/2021</td>
-                <td>Unidade básica Morgado</td>
-                <td>8975414541545</td>
+                <td><?=$row['id']?></td>
+                <td><?=$row['nome_pac']?></td>
+                <td><?=$row['encaminhamento']?></td>
+                <td><?=$row['status']?></td>
+                <td><?=$row['clinico']?></td>
+                <td><?=$row['data_cons']?></td>
               </tr>
-          
-              <tr>
-                <td>Roger</td>
-                <td>Raio X</td>
-                <td>Aguardando</td>
-                <td>Aguardando</td> 
-                <td>Aguardando</td>
-                <td>Aguardando</td>
-                <td>5489798465132</td>
-
-              </tr>
-
-              <tr>
-                <td>Ugo</td>
-                <td>Eletrocardiograma</td>
-                <td>Marcado</td>
-                <td>Clóvis</td> 
-                <td>09/10/2021</td>
-                <td>Hospital Universitário</td>
-                <td>21354687321987</td>
-              </tr>
-              <tr>
-                <td>Regina</td>
-                <td>Endoscopia</td>
-                <td>Aguardando</td>
-                <td>Aguardando</td> 
-                <td>Aguardando</td>
-                <td>Aguardando</td>
-                <td>8798654654125</td>
-
-              </tr>
+<?php
+      }
+?>
+              
 
             </tbody>
           </table>

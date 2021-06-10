@@ -19,6 +19,17 @@
 	} else {
 		$update = "update consulta set status = 'aguardando agendamento' where id = '".$_REQUEST['escondeId']."';";
 		$resultado = $conexao->exec($update);
+		
+		if ($_REQUEST['encaminhamento'] == "cadiologista") {
+			$updateC = "update consulta set encaminhamento = 'Cardiologista' where id = '".$_REQUEST['escondeId']."';";
+			$resultadoC = $conexao->exec($updateC);
+		} elseif ($_REQUEST['encaminhamento'] == "oftalmologista") {
+			$updateOf = "update consulta set encaminhamento = 'Oftalmologista' where id = '".$_REQUEST['escondeId']."';";
+			$resultadoOf = $conexao->exec($updateOf);
+		} elseif ($_REQUEST['encaminhamento'] == "otorrino") {
+			$updateOt = "update consulta set encaminhamento = 'Otorrinolaringologista' where id = '".$_REQUEST['escondeId']."';";
+			$resultadoOt = $conexao->exec($updateOt);
+		}
 		print 'Encaminhado para agendamento';
 		print '<script>window.setTimeout(function(){window.location=\'/medico.php\';}, 2000);</script>';
 	}
