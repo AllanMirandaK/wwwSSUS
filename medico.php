@@ -64,15 +64,15 @@
             </thead>
             <tbody>
               <?php
-                  $sql = "select id, cpf_pac, data_cons, descricao, status, fechamento, clinico, encaminhamento, especialista, data_esp from consulta where status = 'aguardando atendimento'; ";
+                  $sql = "select id, cpf_pac, nome_pac, data_cons, descricao, status, fechamento, clinico, encaminhamento, especialista, data_esp from consulta where status = 'aguardando atendimento'; ";
                   $rs = $conn->query($sql);
                   while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) {
               ?>
               <tr>
-                <td><?=$row['id']?></td>
+                <td><?=$row['nome_pac']?></td>
                 <td><?=$row['descricao']?></td>
                 <td><?=$row['cpf_pac']?></td>
-                <td><a href="aindex.php?action=update&id=<?=$row['id']?>"> X </a></td>
+                <td><a href="med_atend.php?id=<?=$row['id']?>"> X </a></td>
               </tr>
 <?php
       }

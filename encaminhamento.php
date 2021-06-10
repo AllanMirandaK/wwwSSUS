@@ -13,6 +13,7 @@
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
+<<<<<<< HEAD
 			<nav id="sidebar">
 				<div class="p-4 pt-5">
 		  		<a href="#" class="img logo mb-5" style="background-image: url(images/logo.png);"></a>
@@ -47,6 +48,11 @@
 
 	      </div>
     	</nav>
+=======
+			<?php
+                require 'menu.php';
+            ?>
+>>>>>>> 616676d20a13593cc5737c10e70e4a694f5e2007
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5">          
