@@ -1,6 +1,7 @@
 <?php
 	$conexao = new pdo('sqlite:bancodedados.data');
 
+	$varNenhum = "nenhum";
 
 	if ( isset( $_FILES['copia']['tmp_name'] ) ) {
 		$copia = base64_encode(file_get_contents($_FILES['copia']['tmp_name']));
@@ -8,7 +9,7 @@
 		$copia = '';
 	}
 	
-	if ($_REQUEST['encaminhamento'] == 'nenhum') {
+	if ($_REQUEST['encaminhamento'] == "nenhum" ) {
 		$update = "update consulta set status = 'finalizado' where id = '".$_REQUEST['escondeId']."';";
 		$resultado = $conexao->exec($update);
 		$update2 = "update consulta set fechamento = '".$_REQUEST['descFechamento']."' where id = '".$_REQUEST['escondeId']."';";

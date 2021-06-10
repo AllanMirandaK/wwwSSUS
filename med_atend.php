@@ -131,7 +131,7 @@
                 <label for="descricao">Fechamento:</label>
                 <textarea class="form-control " id="descFechamento" name="descFechamento" placeholder="Descreva aqui um fechamento de atendimento ou faça o encaminhamento"></textarea>
                 <label for="encaminhamento">Encaminhamento: </label>
-                <select>
+                <select id="encaminhamento" name="encaminhamento">
                   <option value="nenhum" selected>Nenhum</option>
                   <option value="cadiologista">Cardiologista</option>
                   <option value="oftalmologista">Oftalmologista</option>
