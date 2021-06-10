@@ -22,9 +22,11 @@
 			<p class="subtitulo">Insira seu protocolo para saber mais sobre o mesmo:</p>
 
 			<div id="divBusca">
+				<form action="paciente.php?action=read" method="post">
 				  <img src="../images/search.png" style="width:30px;" alt="Buscar..."/>
 				  <input type="text" id="txtBusca" placeholder="Buscar..."/>
-				  <button id="btnBusca">Buscar</button>
+				  <button type="submit" id="btnBusca">Buscar</button>
+				</form>
 			</div>
 		
 
@@ -36,6 +38,7 @@
 					<th scope="col">Nome</th>
 					<th scope="col">Situação</th>
 			</tr>
+			
 		</thead>
 
             <tbody>
