@@ -8,12 +8,12 @@
 
 	if (count($resultado) > 0) {
 		$_SESSION['usuario_login'] = $_REQUEST['usuario_login'];
-		header('location:atendimento.php');
+		header('location:encaminhamento.php');
 		
 	}
 	else {
 
-		header('location:index.php');
+		header('location:loginunidade.php');
 	}
 	
 
