@@ -4,6 +4,15 @@
 
   $conn = new pdo('sqlite:bancodedados.data');
 
+  $idcliente = $_GET['id'];
+
+
+  $pesquisaDados = "select * from consulta where id = '".$idcliente."'; ";
+  $resultadoDados = $conn->query($pesquisaDados)->fetchAll();
+
+  $update2 = "update consulta set clinico = '".$_SESSION['email_login']."' where id = '".$idcliente."';";
+  $resultado4 = $conn->exec($update2);
+
   ?>
 
 <!doctype html>
@@ -50,27 +59,91 @@
       <div id="content" class="p-4 p-md-5">
 
         <h2 class="mb-4">Atender Consulta</h2>
-        <form method="post" action="consulta_insert.php"m><!--form cadastro de paciente-->
+        <div class="container">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th colspan="5">Dados Paciente</th>
+              </tr>
+              <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Endereco</th>
+                <th>Nº cartão SUS</th>
+                <th>Gênero</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+                  $sql = "select nome, cpf, endereco, cartaosus, genero from paciente where cpf = '".$resultadoDados[0]['cpf_pac']."'; ";
+                  $rs = $conn->query($sql);
+                  while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) {
+              ?>
+              <tr>
+                <td><?=$row['nome']?></td>
+                <td><?=$row['cpf']?></td>
+                <td><?=$row['endereco']?></td>
+                <td><?=$row['cartaosus']?></td>
+                <td><?=$row['genero']?></td>
+              </tr>
+<?php
+      }
+?>            
+              
+            </tbody>
+          </table>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th colspan="5">Dados Atendimento</th>
+              </tr>
+              <tr>
+                <th>Protocolo</th>
+                <th>Descrição</th>
+                <th>Clinico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+                  $sql = "select id, descricao, clinico from consulta where id = '".$idcliente."'; ";
+                  $rs = $conn->query($sql);
+                  while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) {
+              ?>
+              <tr>
+                <td><?=$row['id']?></td>
+                <td><?=$row['descricao']?></td>
+                <td><?=$row['clinico']?></td>
+              </tr>
+<?php
+      }
+?>            
+              <tr>
+                <td colspan="5"></td>
+              </tr>
+            </tbody>
+          </table>
+          <form method="post" action="med_finalatend.php"m><!--form cadastro de paciente-->
             <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">CPF</label>
-                  <input type="text" class="form-control" id="pac_cpf" name="pac_cpf"  maxlength="11">
-                </div>
-
-                <div class="form-group col-md-3">
-                    <label for="inputAddress2">Data da consulta</label>
-                    <input type="date" class="form-control" id="pac_consulta" name="pac_consulta">
-                </div>
+                
               </div>
               <div class="mb-3">
-                <label for="descricao">Descrição</label>
-                <textarea class="form-control " id="descricao" name="descricao" value="".$resultado[0]['cpf_pac']."" placeholder="Descreva uma breve descrição dos sintomas do paciente" required></textarea>
-                <div class="invalid-feedback">
-                </div>
+                
+                <label for="descricao">Fechamento:</label>
+                <textarea class="form-control " id="descFechamento" name="descFechamento" placeholder="Descreva aqui um fechamento de atendimento ou faça o encaminhamento"></textarea>
+                <label for="encaminhamento">Encaminhamento: </label>
+                <select>
+                  <option value="nenhum" selected>Nenhum</option>
+                  <option value="cadiologista">Cardiologista</option>
+                  <option value="oftalmologista">Oftalmologista</option>
+                  <option value="otorrino">Otorrinolaringologista</option>
+                </select>
               </div>
-
-            <button type="submit" class="btn btn-primary">Registrar</button>
+              <textarea hidden name="escondeId" id="escondeId"><?=$idcliente?></textarea>
+            <button type="submit" class="btn btn-primary">Finalizar</button>
             </form>
+        </div>
+
+      </div>
 
 
       </div>
