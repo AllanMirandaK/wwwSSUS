@@ -72,7 +72,7 @@
                 <td><?=$row['nome_pac']?></td>
                 <td><?=$row['descricao']?></td>
                 <td><?=$row['cpf_pac']?></td>
-                <td><a href="aindex.php?action=update&id=<?=$row['id']?>"> X </a></td>
+                <td><a href="med_atend.php?id=<?=$row['id']?>"> X </a></td>
               </tr>
 <?php
       }
