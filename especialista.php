@@ -1,11 +1,13 @@
 <?php
   session_start();
   //require 'security_medico.php';
+
+  $conn = new pdo('sqlite:bancodedados.data');
   ?>
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Início</title>
+  	<title>Minha Agenda</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -54,19 +56,65 @@
       <div id="content" class="p-4 p-md-5">
 
 
-        <h2 class="mb-4">Processos em andamento</h2>
+        <h2 class="mb-4">Minha agenda</h2>
           
 
             <div class="container">
           <table class="table">
             <thead class="thead-dark">
               <tr>
+                <th colspan="5">Atendimentos Agendados</th>
+              </tr>
+              <tr>
                 <th>Nome</th>
                 <th>Descricao</th>
-                <th>CPF</th>
+                <th>Data Consulta</th>
                 <th>Atender</th>
               </tr>
+              <?php
+                  $sql = "select id, nome_pac, data_cons, descricao from consulta where status = 'agendado' and especialista = '".$_SESSION['email_login']."'; ";
+                  $rs = $conn->query($sql);
+                  while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) {
+              ?>
+              <tr>
+                <td><?=$row['nome_pac']?></td>
+                <td><?=$row['descricao']?></td>
+                <td><?=$row['data_cons']?></td>
+                <td><a href="esp_atend.php?id=<?=$row['id']?>"> X </a></td>
+              </tr>
+<?php
+      }
+?>
 
+              
+
+            </tbody>
+          </table>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th colspan="5">Horários Livres</th>
+              </tr>
+              <tr>
+                <th>ID</th>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Local</th>
+              </tr>
+              <?php
+                  $sql2 = "select id, datalivre, hora, local from agenda where idAtend = 'livre' and medico = '".$_SESSION['email_login']."'; ";
+                  $rs3 = $conn->query($sql2);
+                  while ( $row3 = $rs3->fetch(PDO::FETCH_BOTH) ) {
+              ?>
+              <tr>
+                <td><?=$row3['id']?></td>
+                <td><?=$row3['datalivre']?></td>
+                <td><?=$row3['hora']?></td>
+                <td><?=$row3['local']?></td>
+              </tr>
+<?php
+      }
+?>
 
               
 

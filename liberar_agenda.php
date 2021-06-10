@@ -55,18 +55,35 @@
 
 
         <h2 class="mb-4">Liberar agenda</h2>
-        <form method="post" action="consulta_insert.php"m><!--form cadastro de paciente-->
+        <form method="post" action="agenda_insert.php"m><!--form cadastro de paciente-->
             <div class="form-row">
                 <div class="form-group col-md-5">
-                    <label for="inputAddress2">Dia livre para consulta</label>
-                    <input type="date" class="form-control" id="pac_consulta" name="pac_consulta">
+                    <label for="dataLivre">Dia livre para consulta</label>
+                    <input type="date" class="form-control" id="dataLivre" name="dataLivre">
                 </div>
                 <div class="form-group col-md-5">
-                    <label for="inputAddress2">Hora vaga</label>
-                    <input type="time" class="form-control" id="pac_consulta" name="pac_consulta">
+                    <label for="horaLivre">Hora vaga</label>
+                    <input type="time" class="form-control" id="horaLivre" name="horaLivre">
                 </div>
               </div>
-
+              <div class="form-row">
+                  <label for="localConsulta">Local: &nbsp</label>
+                    <select id="localConsulta" name="localConsulta">
+                      <option hidden >Selecione...</option>
+                      <option value="Santa Casa">Santa Casa</option>
+                      <option value="Hospital Universitario">Hospital Universitário</option>
+                      <option value="Hospital da Colonia Nova">Hospital da Colonia Nova</option>
+                    </select>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label for="localConsulta">Tipo: &nbsp</label>
+                <select id="tipo" name="tipo">
+                  <option hidden selected>...</option>
+                  <option value="Cardiologista">Cardiologista</option>
+                  <option value="Oftalmologista">Oftalmologista</option>
+                  <option value="Otorrinolaringologista">Otorrinolaringologista</option>
+                </select>
+              </div>
+              <br>
             <button type="submit" class="btn btn-primary">Registrar</button>
             </form>
           
