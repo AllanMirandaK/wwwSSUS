@@ -28,17 +28,8 @@
 
 			<p class="subtitulo">Insira seu protocolo para saber mais sobre o mesmo:</p>
 
-			<div id="divBusca">
-				<form action="paciente_resul.php" method="post">
-				  <img src="../images/search.png" style="width:30px;" alt="Buscar..."/>
-				  <input type="text" id="txtBusca" name="txtBusca" placeholder="Buscar..."/>
-				  <button type="submit" id="btnBusca">Buscar</button>
-				</form>
-			</div>
-		
-
 			<div id="tabelaPesquisa">
-			<!--
+			
 			<table class="table">
             <thead>
 			<tr>
@@ -51,23 +42,21 @@
             <tbody>
 			   				
 			  <?php
-					/*$sql = "select id, nome, situacao from consulta; ";*
-					if (isset($_REQUEST['pesquisa'])) {
-						$sql = "select id, nome_pac, status from consulta where protocolo like '%".$_REQUEST['busca']."%' order by protocolo; ";
-					}
-					$rs = $conn->query($sql);
-					while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) { 
+					$sql = "select id, nome_pac, situacao from consulta where id = ''; ";
+					$sql2 = "select id, nome_pac, status from consulta where id = '".$_REQUEST['txtBusca']."'; ";
+					$rs2 = $conn->query($sql2);
+					while ( $row = $rs2->fetch(PDO::FETCH_BOTH) ) { 
 				?>
 				<tr>
 					<td><?=$row['id']?></td>
 					<td><?=$row['nome_pac']?></td>
 					<td><?=$row['status']?></td>
 				</tr> 
-				<?php
-					}*/
-				?>
+				<?php 
+			}
+			?>
 			  </tbody>
-			</table>-->
+			</table>
 		</div>
 
 			</div>
