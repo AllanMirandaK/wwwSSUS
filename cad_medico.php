@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group col-md-6">
                 <label for="inputPassword4">CPF</label>
-                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF do médico" maxlength="11">
+                <input type="text" class="form-control" id="cpf" name="cpf" maxlength="11" placeholder="000.000.000-00" maxlength="11" onkeypress="$(this).mask('000.000.000-00')">
                 </div>
             </div>
             <div class="form-row">
@@ -94,5 +94,7 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
   </body>
 </html>

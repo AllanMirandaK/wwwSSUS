@@ -27,7 +27,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">CPF</label>
-                  <input type="text" class="form-control" id="cpf_pac" name="cpf_pac" placeholder="CPF paciente (sem pontos)" maxlength="11">
+                  <input type="text" class="form-control" id="cpf_pac" name="cpf_pac" placeholder="000.000.000-00" maxlength="11" onkeypress="$(this).mask('000.000.000-00')">
                 </div>
 
                 <div class="form-group col-md-3">
@@ -53,5 +53,6 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
   </body>
 </html>

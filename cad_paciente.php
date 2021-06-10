@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group col-md-6">
                 <label for="inputPassword4">CPF</label>
-                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF do paciente" maxlength="11">
+                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="11" onkeypress="$(this).mask('000.000.000-00')">
                 </div>
             </div>
             <div class="form-row">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="form-group col-md-3">
                 <label for="cep">CEP</label>
-                <input type="text" class="form-control" id="cep" name="cep" placeholder="00.000-000">
+                <input type="text" class="form-control" id="cep" name="cep" placeholder="00.000-000" onkeypress="$(this).mask('00.000-000')">
                 </div>
             </div>
 
@@ -75,5 +75,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/validaCPF.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
   </body>
 </html>

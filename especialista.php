@@ -80,7 +80,7 @@
                 <td><?=$row['nome_pac']?></td>
                 <td><?=$row['descricao']?></td>
                 <td><?=$row['data_cons']?></td>
-                <td><a href="esp_atend.php?id=<?=$row['id']?>"> X </a></td>
+                <td><a href="esp_atend.php?id=<?=date('d/m/Y');$row['id']?>"> X </a></td>
               </tr>
 <?php
       }
@@ -108,7 +108,7 @@
               ?>
               <tr>
                 <td><?=$row3['id']?></td>
-                <td><?=$row3['datalivre']?></td>
+                <td><?=date('d/m/Y');$row3['datalivre']?></td>
                 <td><?=$row3['hora']?></td>
                 <td><?=$row3['local']?></td>
               </tr>

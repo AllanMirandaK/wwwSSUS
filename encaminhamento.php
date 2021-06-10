@@ -55,7 +55,7 @@
                 <td><?=$row['encaminhamento']?></td>
                 <td><?=$row['status']?></td>
                 <td><?=$row['clinico']?></td>
-                <td><?=$row['data_cons']?></td>
+                <td><?= date('d/m/Y');$row['data_cons']?></td>
               </tr>
 <?php
       }
