@@ -72,7 +72,7 @@
                 <th>Atender</th>
               </tr>
               <?php
-                  $sql = "select id, nome_pac, data_cons, descricao from consulta where status = 'agendado' and especialista = '".$_SESSION['email_login']."'; ";
+                  $sql = "select id, nome_pac, data_cons, descricao from consulta where status like '%agendado %' and especialista = '".$_SESSION['email_login']."'; ";
                   $rs = $conn->query($sql);
                   while ( $row = $rs->fetch(PDO::FETCH_BOTH) ) {
               ?>
