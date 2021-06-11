@@ -82,26 +82,23 @@
               </tr>
             </thead>
             <tbody>
+              
+              <?php
+                  $sqlagenda = "select id, medico, tipo, datalivre, hora, local from agenda where idAtend = 'livre'; ";
+                  $rsagenda = $conn->query($sqlagenda);
+                  while ( $rowagenda = $rsagenda->fetch(PDO::FETCH_BOTH) ) {
+              ?>
               <tr>
-                <td>Maria</td>
-                <td>Pediatra</td>
-                <td>Hospital Mais Viver</td>
-                <td>25/06/2021</td>
-                <td>15:30:00</td> 
-                <td><button type="button" class="btn btn-success">+</button></td> 
-
+                <td><?=$rowagenda['medico']?></td>
+                <td><?=$rowagenda['tipo']?></td>
+                <td><?=$rowagenda['local']?></td>
+                <td><?=$rowagenda['datalivre']?></td>
+                <td><?=$rowagenda['hora']?></td>
+                <td><a href="encaminhamento_agenda.php?id=<?=$rowagenda['id']?>"> X </a></td>
               </tr>
-              <tr>
-                <td>Ricardo</td>
-                <td>Cardiologista</td>
-                <td>Unidade </td>
-                <td>26/06/2021</td>
-                <td>16:10:00</td>
-                <td><button type="button" class="btn btn-success">+</button></td>  
-              </tr>
-          
-              </tr>
-
+<?php
+      }
+?>
             </tbody>
           </table>
         </div>
